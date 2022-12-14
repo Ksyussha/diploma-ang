@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
+/* .fl{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.mid{
+    text-align: center;
+}
+h1.text-2xl.mid.mb-10.font {
+    /* color: #7796f2; */
+    /* font-weight: 300;
+} */
+/* .card.w-96.bg-base-100.shadow-xl.cursor-pointer.mr-4.mb-8 {
+    font-weight: 100;
+}
+.font-medium {
+    font-weight: normal;
+}  */
+.c-card img{   
+      transition: transform .3s ease-in-out; 
+}
+    
+.c-card img:hover {
+        transform: scale(1.05)
+      
+    }
+    .wrapper{
+        justify-content: center;
+    }
+

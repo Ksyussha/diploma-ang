@@ -1,0 +1,43 @@
+
+<div class="md:container md:mx-auto">
+  <div class="py-6 mx-auto max-w-xl text-center">
+  <strong class="font-extrabold text-red-700 sm:block text-4xl my-2 ">TOURS ALL OVER <br> KAZAKHSTAN</strong>
+</div>
+<div class="wrapper  antialiased text-gray-900 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5" >
+  <div *ngFor="let tour of tours" class="mx-4" >
+      
+      <img [src]="tour.picture"  class="w-full h-72 object-cover object-center rounded-lg shadow-md"[routerLink]="['/tours', tour.id]">    
+      
+   <div class="relative px-4 -mt-16  ">
+     <div class="bg-white p-6 rounded-lg shadow-lg" >
+      <div class="flex items-baseline ">
+        <span class="bg-black text-white text-xs px-2 inline-block rounded-full  uppercase font-semibold tracking-wide mr-1">
+          {{tour.category}}
+        </span> 
+        <span class="bg-black text-white text-xs px-2 inline-block rounded-full  uppercase font-semibold tracking-wide">
+          {{tour.city}}
+        </span>
+      </div>
+      
+      <h4 class="mt-1 text-xl font-semibold uppercase leading-tight truncate">{{ tour.title }}</h4>
+   
+    <div class="mt-1">
+      {{ tour.price }}$
+    </div>
+    <div class="mt-4">
+      <!-- <span class="text-teal-600 text-md font-semibold">{{ tour.date }} </span> -->
+      <a class="inline-flex" 
+      [routerLink]="['/tours', tour.id]"
+      >
+        <span class="rounded-3xl h-12 flex items-center justify-center text-red-700 uppercase px-8 border border-red-700 hover:bg-red-700 hover:text-white transition duration-500 ease-in-out">details</span>
+        
+    </a>
+
+    </div>  
+    </div>
+   </div>
+    
+  </div>
+    </div>
+  </div>
+<router-outlet></router-outlet>

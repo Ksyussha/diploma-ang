@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+  html {font-family: "PT Sans", sans-serif;}
+.hi {
+    display: flex;
+    flex-direction: column;
+      align-items: center;
+      margin-top: 16%;
+  }
+  .hi h1 {
+        color: #7796f2;
+        font-family: 'Bungee Shade', cursive;
+      font-size: 53.5px;
+      text-transform: uppercase;
+      margin: 0px;
+      font-weight: lighter;
+      margin-top: 64px;
+  }
+  
+
+  .hi h2{
+    color: #7796f2;
+  }
+  .pink{
+    color:#ff9ef9;
+  }

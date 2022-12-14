@@ -1,0 +1,9 @@
+/* nav.fl {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+.is-open {
+    display: block !important;
+}

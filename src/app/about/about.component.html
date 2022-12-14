@@ -1,0 +1,67 @@
+<!-- MDI Icons -->
+<!-- <link rel="stylesheet" href="https://cdn.materialdesignicons.com/6.5.95/css/materialdesignicons.min.css"> -->
+
+<!-- Page Container -->
+<div class="md:container md:mx-auto">
+  <div class="md:container md:mx-auto">
+    <div class="flex flex-col">
+      <!-- Meet the Team -->
+      <div class="container max-w-7xl px-4">
+        <!-- Section Header -->
+        <div class="flex flex-wrap justify-center text-center mb-24 mt-6">
+          <div class="w-full lg:w-6/12 px-4">
+            <!-- Header -->
+            <h1
+              class="font-extrabold text-red-700 sm:block text-4xl my-2 uppercase"
+            >
+              Meet the Team
+            </h1>
+
+            <!-- Description -->
+            <p class="text-black my-4">
+              With over 100 years of combined experience, we've got a
+              well-seasoned team at the helm.
+            </p>
+          </div>
+        </div>
+
+        <!-- Team Members -->
+        <div
+          class="wrapper grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5"
+        >
+          <!-- Member #1 -->
+          <div
+            *ngFor="let expert of experts"
+            class="w-full mb-6 px-6 sm:px-6 lg:px-4"
+          >
+            <div class="flex flex-col">
+              <!-- Avatar -->
+              <a href="#" class="">
+                <img
+                  class="w-72 h-72 object-cover object-center rounded-lg shadow-md"
+                  [src]="expert.picture"
+                />
+              </a>
+
+              <!-- Details -->
+              <div class="text-center mt-6">
+                <!-- Name -->
+                <h1 class="text-gray-900 text-xl font-bold mb-1">
+                  {{ expert.name }}
+                </h1>
+                <h1 class="text-gray-900 text-xl font-bold mb-1">
+                  {{ expert.surname }}
+                </h1>
+
+                <!-- Title -->
+                <div class="text-gray-700 font-light mb-2">
+                  {{ expert.speciality }}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
